@@ -1,0 +1,128 @@
+body{
+    background:black;
+}
+
+
+#enclosure{
+    
+    background:white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border: 0px;
+}
+
+#eventSearch{
+    border-bottom-left-radius: 25px;
+    /* border-bottom-left-radius:  */
+    float: left;
+    width: 70%;
+    border: 0px;
+}
+
+#zipCode{
+    /* border-radius: 25px; */
+    float: left;
+    width: 10%;
+    border: 0px;
+}
+
+#milesAway{
+    float: left;
+    width: 10%;
+    /* height: 100%; */
+    border: 0px;
+}
+
+#submit{
+    border-bottom-right-radius: 25px;
+    /* border-radius: 25px; */
+    float: left;
+    width: 10%;
+    height: 500%;
+    /* border: 0px; */
+}
+
+#navlogo{
+    float: left;
+    /* border-bottom-left-radius:  */
+    
+    height:5%;
+    width:10%;
+   
+}
+
+#neventSearch{
+    /* border-bottom-left-radius: 25px; */
+    /* border-bottom-left-radius:  */
+    float: left;
+    width: 60%;
+    border: 0px;
+}
+
+
+/* .results{
+    position: absolute;
+} */
+/* 
+#wrap {
+  margin: 50px 100px;
+  display: inline-block;
+  position: relative;
+  height: 60px;
+  float: right;
+  padding: 0;
+  position: relative;
+} */
+
+
+/* nav bar */
+/*/*/*/*/*/*/*.top-header {
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -50px;  Hide the navbar 50 px outside of the top view 
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}*/*/*/*/*/*/*/
+
+/* Style the navbar links */
+/* .top-header{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.top-header:hover {
+    background-color: #ddd;
+    color: black;
+} */
+
+
+
+
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
