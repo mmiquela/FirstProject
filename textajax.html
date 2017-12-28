@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Multiple AJAX</title>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // Performing GET requests to the OMDB API and logging the responses to the console
+    $.ajax({
+      url: "https://api.foursquare.com/v2/venues/search?near=08857&name=football&client_id=4W0G0DYQMQZU4EKFDHHOLKORBO4KB3VLHCXOPKV21OXSKDIK&client_secret=PRCH0DAAWVWXGX3JAJS5LSDQLFXCHFUXOKKEIAYDDWPE0GR1&v=20171227",
+      method: "GET"
+    }).done(function(response) {
+      console.log(response);
+    });
+  </script>
+
+</body>
+
+</html>
