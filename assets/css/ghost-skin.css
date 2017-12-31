@@ -26,7 +26,7 @@
     font-family: 'Text Me One', sans-serif;
 }*/
 
-#name{
+#search-term{
     border-radius: 25px;
     /*float: left;*/
     width: 48%;
@@ -36,7 +36,7 @@
     font-weight: bold;*/
 }
 
-#near{
+#search-near{
     border-radius: 25px; 
     /*float: left;*/
     width: 48%;

@@ -22,7 +22,7 @@ body{
     font-family: 'Text Me One', sans-serif;
 }
 
-#name{
+#search-term{
     border-bottom-left-radius: 25px;
     /* border-bottom-left-radius:  */
     float: left;
@@ -33,7 +33,7 @@ body{
     font-weight: bold;
 }
 
-#near{
+#search-near{
     /* border-radius: 25px; */
     float: left;
     width: 36%;
