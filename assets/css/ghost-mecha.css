@@ -1,0 +1,80 @@
+/* For mobile phones: */
+@media only screen and (max-width: 900px) {
+
+* {
+  box-sizing: border-box;
+}
+.prez {
+  /*border-top-left-radius: 30%;*/
+  padding: 80px 0 80px;
+  background: #fff;
+}
+.prez .prez--img {
+  width: 400px;
+  height: 200px;
+  background: #fff;
+  margin: auto;
+}
+main {
+  padding: 50px;
+  text-align: center;
+}
+main div {
+  display: inline-block;
+  height: 100%;
+  width: 1000px;
+  background: #0e2b38;
+  margin: 5px;
+  /*border-bottom-left-radius: 500px;*/
+  /*border-top-right-radius: 500px;*/
+  font-family: 'Text Me One', sans-serif;
+  color: white;
+}
+.brand {
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+/*  background:black;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;*/
+  padding: 0px;
+  padding-top: 0px;
+  /*padding-right: 20px;*/
+  font-size: 30px;
+  /*font-family: 'Text Me One', sans-serif;*/
+}
+.search-field {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px; 
+  margin-top: -5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  position: relative;
+  width: 100%;
+  float: left;
+  background: #1a3856;
+}
+.search-field input {
+  top: 0;
+  display: block;
+  margin: auto;
+  width: 200px;
+  margin: auto;
+  padding: 6px;
+}
+.nav.fix-search .search-field {
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px; 
+  position: fixed;
+  margin: 0;
+  top: 0;
+  /*background: #ccc;*/
+  padding: 10px;
+  background: #382247;
+}
+
+
+
+}

@@ -1,0 +1,102 @@
+body{
+    background:black;
+}
+
+ /*<!-- Style to fix the issue of text extending past panel length -->*/
+/*.panel-body a {
+      word-break: break-all;
+    }*/
+
+.nav{
+    margin: auto;
+    background:black;
+    border: 1px;
+    border-bottom-left-radius: 25px;
+}
+
+#searchLabel{
+    float:left;
+    color:white;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: 'Text Me One', sans-serif;
+}
+
+#name{
+    border-bottom-left-radius: 25px;
+    /* border-bottom-left-radius:  */
+    float: left;
+    width: 36%;
+    border: 3px;
+    font-family: 'Text Me One', sans-serif;
+    color: #1a3856;
+    font-weight: bold;
+}
+
+#near{
+    /* border-radius: 25px; */
+    float: left;
+    width: 36%;
+    border: 1px;
+    font-family: 'Text Me One', sans-serif;
+    color: #1a3856;
+    font-weight: bold;
+}
+
+/*#milesAway{
+    float: left;
+    width: 10%;
+     height: 100%; 
+    border: 1px;
+}*/
+
+#run-search{
+    border-bottom-right-radius: 25px;
+    /* border-radius: 25px; */
+    float: left;
+    background-color: white;
+  /*  width: 10%;
+    height: 500%;*/
+     border: 1px; 
+     font-family: 'Text Me One', sans-serif;
+     font-weight: bold;
+     color: #751a63;
+}
+
+#clear-all{
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    /* border-radius: 25px; */
+    float: left;
+    background-color: white;
+    color: #821235;
+  /*  width: 10%;
+    height: 500%;*/
+     border: 1px; 
+     font-family: 'Text Me One', sans-serif;
+     font-weight: bold;
+}
+
+#navlogo{
+    
+    border-bottom-left-radius: 25px;
+    float: left;
+    height:50%;
+    width:10%;
+   
+}
+
+#neventSearch{
+    /* border-bottom-left-radius: 25px; */
+    /* border-bottom-left-radius:  */
+    float: left;
+    width: 60%;
+    border: 0px;
+    font-family: 'Text Me One', sans-serif;
+}
+
+#wellsection{
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+}

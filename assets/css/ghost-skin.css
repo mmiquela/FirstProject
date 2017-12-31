@@ -1,0 +1,95 @@
+/* For mobile phones: */
+@media only screen and (max-width: 900px) {
+
+/*body{
+    background:black;
+}*/
+
+ /*<!-- Style to fix the issue of text extending past panel length -->*/
+/*.panel-body a {
+      word-break: break-all;
+    }*/
+
+.nav{
+    border-radius: 25px;
+   /* margin: auto;
+    background:black;
+    border: 1px;
+    border-bottom-left-radius: 25px;*/
+}
+
+/*#searchLabel{
+    float:left;
+    color:white;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-family: 'Text Me One', sans-serif;
+}*/
+
+#name{
+    border-radius: 25px;
+    /*float: left;*/
+    width: 48%;
+/*    border: 3px;
+    font-family: 'Text Me One', sans-serif;
+    color: #1a3856;
+    font-weight: bold;*/
+}
+
+#near{
+    border-radius: 25px; 
+    /*float: left;*/
+    width: 48%;
+    margin-left: 50px;
+    /*border: 1px;*/
+/*    font-family: 'Text Me One', sans-serif;
+    color: #1a3856;
+    font-weight: bold;*/
+}
+
+/*#milesAway{
+    float: left;
+    width: 10%;
+     height: 100%; 
+    border: 1px;
+}*/
+
+#run-search{
+    border-radius: 25px;
+    /* border-radius: 25px; */
+   /* float: left;
+    background-color: white;*/
+    width: 15%;
+    font-size: 12px;
+    /*height: 500%;*/
+     /*border: 1px; 
+     font-family: 'Text Me One', sans-serif;
+
+     font-weight: bold;
+     color: #751a63;*/
+}
+
+#clear-all{
+    border-radius: 25px; 
+    width: 15%;
+    font-size: 12px;
+
+}
+
+
+
+#wellsection{
+  float:left;
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+}
+
+
