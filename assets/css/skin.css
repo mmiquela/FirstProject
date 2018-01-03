@@ -8,39 +8,26 @@ body{
     }*/
 
 .nav{
-    margin: auto;
     background:black;
     border: 1px;
     border-bottom-left-radius: 25px;
 }
 
-#searchLabel{
-    float:left;
-    color:white;
-    margin-right: 5px;
-    margin-left: 5px;
-    font-family: 'Text Me One', sans-serif;
-}
-
-#search-term{
+#name{
     border-bottom-left-radius: 25px;
     /* border-bottom-left-radius:  */
     float: left;
-    width: 36%;
+    width: 38%;
     border: 3px;
     font-family: 'Text Me One', sans-serif;
-    color: #1a3856;
-    font-weight: bold;
 }
 
-#search-near{
+#near{
     /* border-radius: 25px; */
     float: left;
-    width: 36%;
+    width: 38%;
     border: 1px;
     font-family: 'Text Me One', sans-serif;
-    color: #1a3856;
-    font-weight: bold;
 }
 
 /*#milesAway{
@@ -58,9 +45,7 @@ body{
   /*  width: 10%;
     height: 500%;*/
      border: 1px; 
-     font-family: 'Text Me One', sans-serif;
-     font-weight: bold;
-     color: #751a63;
+          font-family: 'Text Me One', sans-serif;
 }
 
 #clear-all{
@@ -69,12 +54,11 @@ body{
     /* border-radius: 25px; */
     float: left;
     background-color: white;
-    color: #821235;
+    color: #330818;
   /*  width: 10%;
     height: 500%;*/
      border: 1px; 
      font-family: 'Text Me One', sans-serif;
-     font-weight: bold;
 }
 
 #navlogo{
@@ -92,11 +76,4 @@ body{
     float: left;
     width: 60%;
     border: 0px;
-    font-family: 'Text Me One', sans-serif;
-}
-
-#wellsection{
-    width: 200px;
-    margin-right: 10px;
-    margin-left: 10px;
 }

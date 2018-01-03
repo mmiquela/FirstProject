@@ -5,17 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
   <title>Event Plug</title>
-
   <!-- Bootswatch Styling for Improving the Aesthetics -->
   <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css">
-
   <link rel="stylesheet" href="assets/css/skin.css">
-        <link rel="stylesheet" href="assets/css/ghost-skin.css">
   <link rel="stylesheet" href="assets/css/mecha.css">
-        <link rel="stylesheet" href="assets/css/ghost-mecha.css">
-
   <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
 
 </head>
@@ -23,28 +17,32 @@
 <body>
   <header class="prez">
     <div class="prez--img"><center>
-                <img src="assets/images/gigalogo.png" alt="gigalogo" height="50%" width="50%" />
+                <img src="assets/images/gigalogo.png" alt="gigalogo" height="60%" width="60%" />
               </center></div>
   </header>
+  <!-- Inside Nav, we will have user to enter what (SEARCH BY NAME) /where (SEARCH BY LOCATION) to start the search.  This program has Submit and Clear all buttons. -->
+
 
   <nav class="nav">
      
     <div class="search-field">
+       
 
-            <label id="searchLabel">Search</label>
-
-            <input type="event" class="form-control" id="search-term" placeholder=" > by Event || " />
+      <input type="event" class="form-control" id="name" placeholder= "SEARCH BY NAME" >
               
-            <input type="location" class="form-control" id="search-near" placeholder=" > by Location || " />
-              
-            <button type="submit" class="btn btn-default" id="run-search"><i class="fa fa-search"></i>plug <img src="assets/images/signa.png" alt="signa" height="25%" width="25%"/></button>
             
-            <button type="submit" class="btn btn-default" id="clear-all"><i class="fa fa-trash"></i> unplug </button>
+              <input type="zipcode" class="form-control" id="near" placeholder= "SEARCH BY DESCRIPTION">
+              
+             
+              <button type="submit" class="btn btn-default" id="run-search"><i class="fa fa-search"></i>Plug<img src="assets/images/signa.png" alt="signa" height="25%" width="25%"/></button>
+              <button type="submit" class="btn btn-default" id="clear-all"><i class="fa fa-trash"></i> Unplug </button>
+
 
     </div>
-            <span class="brand">eventplug</span>
+    <span class="brand">eventplug</span>
   </nav>
 
+  <!--  This div will display the result with name, location and url. -->
 
   <main>
 
@@ -55,30 +53,11 @@
           </div>
     </div>
 
-    <div><!-- This main panel will hold each of the resulting articles -->
-          <div class="panel-body" id="well-section">
-          </div>
-    </div>
-
-    <div><!-- This main panel will hold each of the resulting articles -->
-          <div class="panel-body" id="well-section">
-          </div>
-    </div>
-
-    <div><!-- This main panel will hold each of the resulting articles -->
-          <div class="panel-body" id="well-section">
-          </div>
-    </div>
         <div><!-- This main panel will hold each of the resulting articles -->
           <div class="panel-body" id="well-section">
           </div>
     </div>
 
-    <div><!-- This main panel will hold each of the resulting articles -->
-          <div class="panel-body" id="well-section">
-          </div>
-    </div>
-
     <div></div>
     <div></div>
     <div></div>
@@ -113,17 +92,12 @@
     <div></div>
     <div></div>
     <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+   
 
 
   </main>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
 
     <!-- jQuery JS -->
   <script src="https://code.jquery.com/jquery.js"></script>
@@ -131,7 +105,6 @@
   <!-- Code to the JavaScript File -->
   <script src="./assets/javascript/search.js"></script>
   <script src="./assets/javascript/soul.js"></script>
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
 </body>
 
