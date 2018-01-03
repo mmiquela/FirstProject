@@ -20,56 +20,29 @@
                 <img src="assets/images/gigalogo.png" alt="gigalogo" height="60%" width="60%" />
               </center></div>
   </header>
+  <!-- Inside Nav, we will have user to enter what (SEARCH BY NAME) /where (SEARCH BY LOCATION) to start the search.  This program has Submit and Clear all buttons. -->
+
 
   <nav class="nav">
      
     <div class="search-field">
-       <!-- <img id="navlogo" src="assets/images/navlogo.png" alt="navlogo" height="1%"/>   -->
-      <!-- <input type="search" placeholder="Search something..." /> -->
-
-  
-
+       
 
       <input type="event" class="form-control" id="name" placeholder= "SEARCH BY NAME" >
               
-             <!--  <label for="zipCode">
-                Zipcode
-              </label> -->
+            
               <input type="zipcode" class="form-control" id="near" placeholder= "SEARCH BY DESCRIPTION">
               
-              <!-- <label for="milesAway">
-                Miles
-              </label> -->
-              <!-- <input type="milesaway" class="form-control" id="milesAway" placeholder="Miles Away" /> -->
-              <!-- <select id="milesAway">
-                <option placeholder="Distance from zipcode.">Distance from zipcode.</option>
-                <option value="Less than 5 miles.">Less than 5 miles.</option>
-                <option value="5 to 10 miles away.">5 to 10 miles away.</option>
-                <option value="10 to 20 miles away.">10 to 20 miles away.</option>
-                <option value="More than 20 miles away.">More than 20 miles away.</option>
-              </select> -->
-<!-- 
-              <button type="submit" class="btn btn-default" id="submit">
-                <img src="assets/images/signa.png" alt="signa" height="25%" width="25%"/>
-              </button>
- -->
+             
               <button type="submit" class="btn btn-default" id="run-search"><i class="fa fa-search"></i>Plug<img src="assets/images/signa.png" alt="signa" height="25%" width="25%"/></button>
               <button type="submit" class="btn btn-default" id="clear-all"><i class="fa fa-trash"></i> Unplug </button>
 
-
-    <!-- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search"></form>
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button> -->
 
     </div>
     <span class="brand">eventplug</span>
   </nav>
 
-<!-- ☰ -->
-
- 
-
-
+  <!--  This div will display the result with name, location and url. -->
 
   <main>
 
@@ -125,22 +98,6 @@
   </main>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
-<!--   <script>
-    var headerHeight = $('.prez').outerHeight();
-    var marNegSearch = parseInt($('.search-field').css('margin-top'));
-    var calc = headerHeight + marNegSearch;
-
-    $(window).on("scroll", function (e) {
-      var scrollTop = $(window).scrollTop();
-      if (scrollTop > calc) {
-        $('.nav').addClass("fix-search");
-      } else {
-        $('.nav').removeClass("fix-search");
-      }
-
-    });
-  </script> -->
 
     <!-- jQuery JS -->
   <script src="https://code.jquery.com/jquery.js"></script>
