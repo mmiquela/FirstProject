@@ -15,17 +15,6 @@
 </head>
 
 <body>
-
-<header id="masthead">
-   <div class="container">
-     <a href="index.html" id="logo"></a>
-     <nav>
-       <a href="signup.html">Sign-up</a>
-     </nav>
-   </div>
- </header>
-	
-  
   <header class="prez">
     <div class="prez--img"><center>
                 <img src="assets/images/gigalogo.png" alt="gigalogo" height="60%" width="60%" />
@@ -39,7 +28,7 @@
     <div class="search-field">
        
 
-      <input type="event" class="form-control" id="name" placeholder= "SEARCH BY LOCATION" >
+      <input type="event" class="form-control" id="name" placeholder= "SEARCH BY NAME" >
               
             
               <input type="zipcode" class="form-control" id="near" placeholder= "SEARCH BY DESCRIPTION">
@@ -69,7 +58,7 @@
           </div>
     </div>
 
-    <div id="map"></div>
+    <div id="testmap"></div>
     <div></div>
     <div></div>
     <div></div>
@@ -113,16 +102,17 @@
     <!-- jQuery JS -->
   <script src="https://code.jquery.com/jquery.js"></script>
 
-
-
-
   <!-- Code to the JavaScript File -->
   <script src="./assets/javascript/search.js"></script>
   <script src="./assets/javascript/soul.js"></script>
- 
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMKn40MMD5-EP1_QBAakXC6sgT_CI3ZLQ">
-    </script>
+
+  <!-- <iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBMKn40MMD5-EP1_QBAakXC6sgT_CI3ZLQ
+    &q=Trenton+NJ" allowfullscreen>
+</iframe> -->
 
 </body>
 

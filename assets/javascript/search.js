@@ -19,6 +19,10 @@ $("#run-search").on("click", function(click){
   description = $("#near").val().trim();
   console.log(input);
 
+  var jMap = $('<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBMKn40MMD5-EP1_QBAakXC6sgT_CI3ZLQ &q='+ input +'" allowfullscreen></iframe>');
+
+  $("#testmap").append(jMap);
+
   // var queryURL = "https://api.foursquare.com/v2/venues/search?near="+ input +"&client_id=4W0G0DYQMQZU4EKFDHHOLKORBO4KB3VLHCXOPKV21OXSKDIK&client_secret=PRCH0DAAWVWXGX3JAJS5LSDQLFXCHFUXOKKEIAYDDWPE0GR1&v=20171227"
 
   var queryURL = "https://api.foursquare.com/v2/venues/search?near="+ input +"&query="+ description +"&client_id=4W0G0DYQMQZU4EKFDHHOLKORBO4KB3VLHCXOPKV21OXSKDIK&client_secret=PRCH0DAAWVWXGX3JAJS5LSDQLFXCHFUXOKKEIAYDDWPE0GR1&v=20171227"
@@ -62,40 +66,17 @@ for (var i = 0; i < 6; i++) {
     });
 
 
-var linkURL = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBMKn40MMD5-EP1_QBAakXC6sgT_CI3ZLQ&q="+ location + ""
 
- $.ajax({
-      url: linkURL, 
-      method: "GET"
-    }).done(function(response1) {
-
-    var location = response.response.venues[i].location.formattedAddress;
- 
-    var frame = $("<iframe>").text(linkURL);    
-
-    $("well-section").append(frame);
-
-    console.log(response1);
-
-    }); 
-
-// CLEAR ALL BUTTON
+// CLEAR WELL BUTTON
 $("#clear-all").on("click", function(){
     $("#well-section").empty();
 });
 
 
-function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
 
-google.maps.event.addDomListener(window, 'load', initMap);
 
+
+
+
+
+  
