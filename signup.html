@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <h1>Hello <span id="clientName"></span></h1>
+</body>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDFoEyWqim7aI0XOnqW9HEzWUJh2wm5rQA",
+    authDomain: "my-awesome-first-project-e7b0d.firebaseapp.com",
+    databaseURL: "https://my-awesome-first-project-e7b0d.firebaseio.com",
+    projectId: "my-awesome-first-project-e7b0d",
+    storageBucket: "my-awesome-first-project-e7b0d.appspot.com",
+    messagingSenderId: "310308582207"
+  };
+  firebase.initializeApp(config);
+
+  function login() {
+      function newLoginHappened(user) {
+      if (user) {
+        app(user);
+      } else { 
+        var provider = new firebase.auth.GoogleAuthProvider();
+          firebase.auth().signInWithRedirect(provider);
+      }
+
+    }
+      firebase.auth().onAuthStateChanged(newLoginHappened);
+  }
+  // function app(){
+    function app(user) {
+      // user.displayName
+      // user.email
+      // user.photoURL
+      // user.uid
+      // document.getElementById("clientName").innerHTML = "there!";
+      // document.getElementById("clientName").innerHTML = user.displayName;
+    var x = location.protocol;
+    document.getElementById("demo").innerHTML = x;
+  }
+  // window.onload = app;
+  window.onload = login;
+</script>
+</html>
