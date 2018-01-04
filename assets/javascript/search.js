@@ -61,16 +61,41 @@ for (var i = 0; i < 6; i++) {
 
     });
 
-// CLEAR WELL BUTTON
+
+var linkURL = "https://www.google.com/maps/embed/v1/search?key=AIzaSyBMKn40MMD5-EP1_QBAakXC6sgT_CI3ZLQ&q="+ location + ""
+
+ $.ajax({
+      url: linkURL, 
+      method: "GET"
+    }).done(function(response1) {
+
+    var location = response.response.venues[i].location.formattedAddress;
+ 
+    var frame = $("<iframe>").text(linkURL);    
+
+    $("well-section").append(frame);
+
+    console.log(response1);
+
+    }); 
+
+// CLEAR ALL BUTTON
 $("#clear-all").on("click", function(){
     $("#well-section").empty();
 });
 
 
+function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
 
+google.maps.event.addDomListener(window, 'load', initMap);
 
-
-
-
-
-  
