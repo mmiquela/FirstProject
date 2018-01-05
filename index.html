@@ -13,8 +13,14 @@
   <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
 
 </head>
-
 <body>
+  <!-- links to Foursquare and Signup -->
+  <div class="links">
+    <!-- <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a> -->
+    <div class="links--img">
+    <a href="https://foursquare.com/login?continue=%2F&clicked=true"><img src="images/foursquare.jpeg" width="42" height="42" class="social" alt="Foursquare"/></a>
+    <a href="signup.html"><img src="images/sign-up.png" width="42" height="42" class="social" alt="Sign-up"  /></a></div>
+  </div>
   <header class="prez">
     <div class="prez--img"><center>
                 <img src="assets/images/gigalogo.png" alt="gigalogo" height="60%" width="60%" />
@@ -22,79 +28,41 @@
   </header>
   <!-- Inside Nav, we will have user to enter what (SEARCH BY NAME) /where (SEARCH BY LOCATION) to start the search.  This program has Submit and Clear all buttons. -->
 
-
   <nav class="nav">
      
     <div class="search-field">
        
-
-      <input type="event" class="form-control" id="name" placeholder= "SEARCH BY NAME" >
-              
+      <!-- ADDED BY JEFF: I CHANGED THE WIDTH OF THE FIRST BAR AS NOT TO BLOCK THE THE EVENTPLUG NAME ON THE RIGHT SIDE -->
             
-              <input type="zipcode" class="form-control" id="near" placeholder= "SEARCH BY DESCRIPTION">
+              <input type="zipcode" class="form-control" style="border-radius: 10px; width: 35%" id="near" placeholder= "I'm Looking for...">
+              
+      <input type="event" class="form-control" id="name" style="border-radius: 10px;" placeholder= "Near this Location.." >
               
              
-              <button type="submit" class="btn btn-default" id="run-search"><i class="fa fa-search"></i>Plug<img src="assets/images/signa.png" alt="signa" height="25%" width="25%"/></button>
-              <button type="submit" class="btn btn-default" id="clear-all"><i class="fa fa-trash"></i> Unplug </button>
+              <button type="submit" class="btn btn-default" style="border-radius: 10px;" id="run-search"><i class="fa fa-search"></i>Plug<img src="assets/images/signa.png" alt="signa" height="25%" width="25%"/></button>
+              <button type="submit" class="btn btn-default" style="border-radius: 10px;" id="clear-all"><i class="fa fa-trash"></i> Unplug </button>
 
 
     </div>
-    <span class="brand">eventplug</span>
+    <span class="brand" style="margin-top: 4px;">eventplug</span>
   </nav>
 
   <!--  This div will display the result with name, location and url. -->
 
-  <main>
+  <main class="row">
+
+		    <!-- This main panel will hold each of the resulting articles -->
+		     <div class="panel-body" id="well-section" style="width: 600px; height: 400px; overflow-y:scroll;"></div>
+
+		   <!-- DIV HOLDING THE GOOGLE MAPS DISPLAY -->
+	        <div id="testmap" style="width: 400px"></div>
+
+<div></div>
+<div></div>
+<div></div>
 
 
-
-    <div><!-- This main panel will hold each of the resulting articles -->
-          <div class="panel-body" id="well-section">
-          </div>
-    </div>
-
-        <div><!-- This main panel will hold each of the resulting articles -->
-          <div class="panel-body" id="well-section">
-          </div>
-    </div>
-
-    <div id="testmap"></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-   
-
-
+    
   </main>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
@@ -113,6 +81,17 @@
   src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBMKn40MMD5-EP1_QBAakXC6sgT_CI3ZLQ
     &q=Trenton+NJ" allowfullscreen>
 </iframe> -->
+
+ <footer class="footer" style="color: white; text-align: center;" >
+        © 2017 MAJS (Marsha-Alexa-Jeff-Syed)
+
+        <span>FOLLOW US ||</span>
+        <a href="http://www.facebook.com/eventplug" class="footer-share fb" title="Become a fan on Facebook" target="_new" data-ga-label="Facebook Button"><img src="assets/images/fbp.png" alt="Facebook" height="5%" width="5%"/></a>
+        <a href="http://twitter.com/eventplug" class="footer-share twitter" title="Follow us on Twitter" target="_new" data-ga-label="Twitter Button"><img src="assets/images/twp.png" alt="Twitter" height="5%" width="5%" /></a>
+        <a href="https://plus.google.com/eventplug" class="footer-share google" title="Follow us on Google+" target="_new" rel="publisher" data-ga-label="Google Plus Button"><img src="assets/images/gop.png" alt="Google+" height="5%" width="5%" /></a>
+       
+  </footer>
+
 
 </body>
 

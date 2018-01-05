@@ -6,22 +6,31 @@
 // 5. CODE SHOULD ITERATE THROUGH MULTIPLE VENUES IN THE OBJECT AND DISPLAY THEM IN THE WELL. (FOR LOOP)
 
 var input = "";
+var j = 0;
 
 // API KEY AND URL 
 // var queryURL = "https://api.foursquare.com/v2/venues/search?near="+ input +"&client_id=4W0G0DYQMQZU4EKFDHHOLKORBO4KB3VLHCXOPKV21OXSKDIK&client_secret=PRCH0DAAWVWXGX3JAJS5LSDQLFXCHFUXOKKEIAYDDWPE0GR1&v=20171227"
 
+
+// HIDING WELL UNTIL SECTION UNTIL USER HITS SUBMITS
+$("#well-section").hide();
+
 // ONCLICK FUNCTION FOR THE SEARCH BUTTON
 $("#run-search").on("click", function(click){
     event.preventDefault();
+
+  //SHOWS WELL-SECTION 
+    $("#well-section").show();
 
 // VARIABLE STORING WHAT THE USER TYPES INTO THE FORM
   input = $("#name").val().trim();
   description = $("#near").val().trim();
   console.log(input);
 
-  var jMap = $('<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBMKn40MMD5-EP1_QBAakXC6sgT_CI3ZLQ &q='+ input +'" allowfullscreen></iframe>');
+  
+  var jMap = $('<iframe width="400" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBMKn40MMD5-EP1_QBAakXC6sgT_CI3ZLQ &q='+ input +'" allowfullscreen></iframe>');
 
-  $("#testmap").append(jMap);
+  $("#testmap").html(jMap);
 
   // var queryURL = "https://api.foursquare.com/v2/venues/search?near="+ input +"&client_id=4W0G0DYQMQZU4EKFDHHOLKORBO4KB3VLHCXOPKV21OXSKDIK&client_secret=PRCH0DAAWVWXGX3JAJS5LSDQLFXCHFUXOKKEIAYDDWPE0GR1&v=20171227"
 
@@ -41,10 +50,11 @@ console.log(response);
 
 for (var i = 0; i < 6; i++) {
 
+    for (var j = 1; j < 6; j++){
 
         var name = response.response.venues[i].name;
 
-        var pOne = $("<p>").text(" Name: " + name);
+        var pOne = $("<p>").text(j +"."+" Name: " + name);
 
         $("#well-section").append(pOne);
 
@@ -60,12 +70,16 @@ for (var i = 0; i < 6; i++) {
 
         $("#well-section").append(pthree);
 
+    }
+
 }
+
+$("#name").val('');
+  $("#near").val('');
+
   });
 
     });
-
-
 
 // CLEAR WELL BUTTON
 $("#clear-all").on("click", function(){
