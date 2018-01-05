@@ -70,7 +70,14 @@ for (var i = 0; i < 6; i++) {
 
         $("#well-section").append(pthree);
 
+
+           if (url === undefined) {
+            pthree.text("URL: No Website Found")
     }
+
+    }
+
+
 
 }
 
