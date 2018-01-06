@@ -47,7 +47,7 @@ $("#run-search").on("click", function(click){
 
 console.log(response);
 
-for (var i = 0; i < 6; i++) {
+for (var i = 0; i < 15; i++) {
 
         var name = response.response.venues[i].name;
 
