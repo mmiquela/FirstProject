@@ -11,7 +11,6 @@ var j = 0;
 // API KEY AND URL 
 // var queryURL = "https://api.foursquare.com/v2/venues/search?near="+ input +"&client_id=4W0G0DYQMQZU4EKFDHHOLKORBO4KB3VLHCXOPKV21OXSKDIK&client_secret=PRCH0DAAWVWXGX3JAJS5LSDQLFXCHFUXOKKEIAYDDWPE0GR1&v=20171227"
 
-
 // HIDING WELL UNTIL SECTION UNTIL USER HITS SUBMITS
 $("#well-section").hide();
 
@@ -29,20 +28,18 @@ $("#run-search").on("click", function(click){
   description = $("#near").val().trim();
   console.log(input);
 
-  
+//VARIABLE STORING THE GOOGLE MAPS API  
   var jMap = $('<iframe width="400" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBMKn40MMD5-EP1_QBAakXC6sgT_CI3ZLQ &q='+ input +'" allowfullscreen></iframe>');
 
+// USING JQUERY TO DISPLAY THE MAP IN THE HTML. 
   $("#testmap").html(jMap);
 
-  // var queryURL = "https://api.foursquare.com/v2/venues/search?near="+ input +"&client_id=4W0G0DYQMQZU4EKFDHHOLKORBO4KB3VLHCXOPKV21OXSKDIK&client_secret=PRCH0DAAWVWXGX3JAJS5LSDQLFXCHFUXOKKEIAYDDWPE0GR1&v=20171227"
-
+// VARIABLE STORING THE FOURSQUARE API. 
   var queryURL = "https://api.foursquare.com/v2/venues/search?near="+ input +"&query="+ description +"&client_id=4W0G0DYQMQZU4EKFDHHOLKORBO4KB3VLHCXOPKV21OXSKDIK&client_secret=PRCH0DAAWVWXGX3JAJS5LSDQLFXCHFUXOKKEIAYDDWPE0GR1&v=20171227"
  
   console.log(queryURL);
-  // API KEY AND URL 
 
-// ** ATTEMPING TO CREATE A FUNCTION THAT WILL HOLD THE AJAX RESPONSE WHICH CAN BE CALLED WHEN THE USER CLICKS THE SEARCH BUTTON.
-
+// AJAX FUNCTION THAT GRAB THE REPSONSE DATA AND DISPLAYS IN THE HTML. 
  $.ajax({
       url: queryURL, 
       method: "GET"
@@ -70,13 +67,14 @@ for (var i = 0; i < 6; i++) {
 
         $("#well-section").append(pthree)
 
-
+// IF STATEMENT THAT WILL LET THE USER KNOW IF THERE IS NO WEBSITE TO BE FOUND IN THE OBJECT. 
            if (url === undefined) {
             pthree.text("URL: No Website Found")
     }
 
 }
 
+// CLEARS THE VALUES IN THE FORMS AFTER THE USER HITS SUBMIT. 
 $("#name").val('');
   $("#near").val('');
 
@@ -84,16 +82,7 @@ $("#name").val('');
 
     });
 
-// CLEAR WELL BUTTON
+// CLEAR ALL BUTTON TO CLEAR THE DATA THAT POPULATE THE WELL. 
 $("#clear-all").on("click", function(){
     $("#well-section").empty();
 });
-
-
-
-
-
-
-
-
-  

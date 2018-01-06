@@ -17,10 +17,12 @@
 <body>
     <!-- links to Foursquare and Signup -->
     <div class="links">
-        <!-- <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a> -->
+
         <div class="links--img">
             <a href="https://foursquare.com/login?continue=%2F&clicked=true"><img src="./assets/images/foursquare.jpeg" width="42" height="42" class="social" alt="Foursquare"/></a>
-            <a href="signup.html"><img src="./assets/images/sign-up.png" width="42" height="42" class="social" alt="Sign-up"/></a></div>
+
+            <a href="signup.html"><img src="./assets/images/sign-up.png" width="42" height="42" class="social" id="sign" alt="Sign-up"/></a></div>
+
         <header class="prez">
             <div class="prez--img">
                 <center>
@@ -34,18 +36,17 @@
 
             <div class="search-field">
 
-                <!-- ADDED BY JEFF: I CHANGED THE WIDTH OF THE FIRST BAR AS NOT TO BLOCK THE THE EVENTPLUG NAME ON THE RIGHT SIDE -->
+                <!-- INPUT FIELD WHERE USER CAN ENTER KEYWORD AND LOCATION -->
 
                 <input type="zipcode" class="form-control" style="border-radius: 10px; width: 35%" id="near" placeholder="I'm Looking for...">
 
                 <input type="event" class="form-control" id="name" style="border-radius: 10px;" placeholder="Near this Location..">
 
-
                 <button type="submit" class="btn btn-default" style="border-radius: 10px;" id="run-search"><i class="fa fa-search"></i>Plug<img src="assets/images/signa.png" alt="signa" height="25%" width="25%"/></button>
                 <button type="submit" class="btn btn-default" style="border-radius: 10px;" id="clear-all"><i class="fa fa-trash"></i> Unplug </button>
-
-
             </div>
+
+
             <span class="brand" style="margin-top: 4px;">eventplug</span>
         </nav>
 
@@ -53,7 +54,7 @@
 
         <main class="row">
 
-        <!-- This main panel will hold each of the resulting articles -->
+            <!-- This main panel will hold each of the resulting articles -->
             <div class="panel-body" id="well-section" style="width: 600px; height: 400px; overflow-y:scroll;"></div>
 
             <!-- DIV HOLDING THE GOOGLE MAPS DISPLAY -->
@@ -65,18 +66,15 @@
 
         </main>
 
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
         <!-- jQuery JS -->
         <script src="https://code.jquery.com/jquery.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
         <!-- Code to the JavaScript File -->
         <script src="./assets/javascript/search.js"></script>
-        <script src="./assets/javascript/soul.js"></script>
+        <script src="./assets/javascript/soul.js"></script>       
 
-
-<!-- FOOTER -->
-
+        <!-- FOOTER -->
         <footer class="footer" style="color: white; text-align: center;">
             © 2017 MAJS (Marsha-Alexa-Jeff-Syed)
 

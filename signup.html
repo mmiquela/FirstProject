@@ -19,6 +19,7 @@
   };
   firebase.initializeApp(config);
 
+
   function login() {
       function newLoginHappened(user) {
       if (user) {
@@ -41,6 +42,7 @@
       // document.getElementById("clientName").innerHTML = user.displayName;
     //var x = location.protocol;
     document.getElementById("clientName").innerHTML = user.displayName;
+
   }
   // window.onload = app;
   window.onload = login;
