@@ -2,95 +2,90 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Event Plug</title>
-  <!-- Bootswatch Styling for Improving the Aesthetics -->
-  <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/skin.css">
-  <link rel="stylesheet" href="assets/css/mecha.css">
-  <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Plug</title>
+    <!-- Bootswatch Styling for Improving the Aesthetics -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/skin.css">
+    <link rel="stylesheet" href="assets/css/mecha.css">
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
 
 </head>
+
 <body>
-  <!-- links to Foursquare and Signup -->
-  <div class="links">
-    <!-- <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a> -->
-    <div class="links--img">
-    <a href="https://foursquare.com/login?continue=%2F&clicked=true"><img src="./assets/images/foursquare.jpeg" width="42" height="42" class="social" alt="Foursquare"/></a>
-    <a href="signup.html"><img src="./assets/images/sign-up.png" width="42" height="42" class="social" alt="Sign-up"  /></a></div>
-  <header class="prez">
-    <div class="prez--img"><center>
-                <img src="assets/images/gigalogo.png" alt="gigalogo" height="60%" width="60%" />
-              </center></div>
-  </header>
-  <!-- Inside Nav, we will have user to enter what (SEARCH BY NAME) /where (SEARCH BY LOCATION) to start the search.  This program has Submit and Clear all buttons. -->
+    <!-- links to Foursquare and Signup -->
+    <div class="links">
+        <!-- <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a> -->
+        <div class="links--img">
+            <a href="https://foursquare.com/login?continue=%2F&clicked=true"><img src="./assets/images/foursquare.jpeg" width="42" height="42" class="social" alt="Foursquare"/></a>
+            <a href="signup.html"><img src="./assets/images/sign-up.png" width="42" height="42" class="social" alt="Sign-up"/></a></div>
+        <header class="prez">
+            <div class="prez--img">
+                <center>
+                    <img src="assets/images/gigalogo.png" alt="gigalogo" height="60%" width="60%" />
+                </center>
+            </div>
+        </header>
+        <!-- Inside Nav, we will have user to enter what (SEARCH BY NAME) /where (SEARCH BY LOCATION) to start the search.  This program has Submit and Clear all buttons. -->
 
-  <nav class="nav">
-     
-    <div class="search-field">
-       
-      <!-- ADDED BY JEFF: I CHANGED THE WIDTH OF THE FIRST BAR AS NOT TO BLOCK THE THE EVENTPLUG NAME ON THE RIGHT SIDE -->
-            
-              <input type="zipcode" class="form-control" style="border-radius: 10px; width: 35%" id="near" placeholder= "I'm Looking for...">
-              
-      <input type="event" class="form-control" id="name" style="border-radius: 10px;" placeholder= "Near this Location.." >
-              
-             
-              <button type="submit" class="btn btn-default" style="border-radius: 10px;" id="run-search"><i class="fa fa-search"></i>Plug<img src="assets/images/signa.png" alt="signa" height="25%" width="25%"/></button>
-              <button type="submit" class="btn btn-default" style="border-radius: 10px;" id="clear-all"><i class="fa fa-trash"></i> Unplug </button>
+        <nav class="nav">
+
+            <div class="search-field">
+
+                <!-- ADDED BY JEFF: I CHANGED THE WIDTH OF THE FIRST BAR AS NOT TO BLOCK THE THE EVENTPLUG NAME ON THE RIGHT SIDE -->
+
+                <input type="zipcode" class="form-control" style="border-radius: 10px; width: 35%" id="near" placeholder="I'm Looking for...">
+
+                <input type="event" class="form-control" id="name" style="border-radius: 10px;" placeholder="Near this Location..">
 
 
-    </div>
-    <span class="brand" style="margin-top: 4px;">eventplug</span>
-  </nav>
-
-  <!--  This div will display the result with name, location and url. -->
-
-  <main class="row">
-
-		    <!-- This main panel will hold each of the resulting articles -->
-		     <div class="panel-body" id="well-section" style="width: 600px; height: 400px; overflow-y:scroll;"></div>
-
-		   <!-- DIV HOLDING THE GOOGLE MAPS DISPLAY -->
-	        <div id="testmap" style="width: 400px"></div>
-
-<div></div>
-<div></div>
-<div></div>
+                <button type="submit" class="btn btn-default" style="border-radius: 10px;" id="run-search"><i class="fa fa-search"></i>Plug<img src="assets/images/signa.png" alt="signa" height="25%" width="25%"/></button>
+                <button type="submit" class="btn btn-default" style="border-radius: 10px;" id="clear-all"><i class="fa fa-trash"></i> Unplug </button>
 
 
-    
-  </main>
+            </div>
+            <span class="brand" style="margin-top: 4px;">eventplug</span>
+        </nav>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <!--  This div will display the result with name, location and url. -->
 
-    <!-- jQuery JS -->
-  <script src="https://code.jquery.com/jquery.js"></script>
+        <main class="row">
 
-  <!-- Code to the JavaScript File -->
-  <script src="./assets/javascript/search.js"></script>
-  <script src="./assets/javascript/soul.js"></script>
+        <!-- This main panel will hold each of the resulting articles -->
+            <div class="panel-body" id="well-section" style="width: 600px; height: 400px; overflow-y:scroll;"></div>
 
-  <!-- <iframe
-  width="600"
-  height="450"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBMKn40MMD5-EP1_QBAakXC6sgT_CI3ZLQ
-    &q=Trenton+NJ" allowfullscreen>
-</iframe> -->
+            <!-- DIV HOLDING THE GOOGLE MAPS DISPLAY -->
+            <div id="testmap" style="width: 400px"></div>
 
- <footer class="footer" style="color: white; text-align: center;" >
-        © 2017 MAJS (Marsha-Alexa-Jeff-Syed)
+            <div></div>
+            <div></div>
+            <div></div>
 
-        <span>FOLLOW US ||</span>
-        <a href="http://www.facebook.com/eventplug" class="footer-share fb" title="Become a fan on Facebook" target="_new" data-ga-label="Facebook Button"><img src="assets/images/fbp.png" alt="Facebook" height="5%" width="5%"/></a>
-        <a href="http://twitter.com/eventplug" class="footer-share twitter" title="Follow us on Twitter" target="_new" data-ga-label="Twitter Button"><img src="assets/images/twp.png" alt="Twitter" height="5%" width="5%" /></a>
-        <a href="https://plus.google.com/eventplug" class="footer-share google" title="Follow us on Google+" target="_new" rel="publisher" data-ga-label="Google Plus Button"><img src="assets/images/gop.png" alt="Google+" height="5%" width="5%" /></a>
-       
-  </footer>
+        </main>
 
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+        <!-- jQuery JS -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+
+        <!-- Code to the JavaScript File -->
+        <script src="./assets/javascript/search.js"></script>
+        <script src="./assets/javascript/soul.js"></script>
+
+
+<!-- FOOTER -->
+
+        <footer class="footer" style="color: white; text-align: center;">
+            © 2017 MAJS (Marsha-Alexa-Jeff-Syed)
+
+            <span>FOLLOW US ||</span>
+            <a href="http://www.facebook.com/eventplug" class="footer-share fb" title="Become a fan on Facebook" target="_new" data-ga-label="Facebook Button"><img src="assets/images/fbp.png" alt="Facebook" height="5%" width="5%"/></a>
+            <a href="http://twitter.com/eventplug" class="footer-share twitter" title="Follow us on Twitter" target="_new" data-ga-label="Twitter Button"><img src="assets/images/twp.png" alt="Twitter" height="5%" width="5%" /></a>
+            <a href="https://plus.google.com/eventplug" class="footer-share google" title="Follow us on Google+" target="_new" rel="publisher" data-ga-label="Google Plus Button"><img src="assets/images/gop.png" alt="Google+" height="5%" width="5%" /></a>
+
+        </footer>
 
 </body>
 

@@ -22,6 +22,8 @@ $("#run-search").on("click", function(click){
   //SHOWS WELL-SECTION 
     $("#well-section").show();
 
+    $("#well-section").val('');
+
 // VARIABLE STORING WHAT THE USER TYPES INTO THE FORM
   input = $("#name").val().trim();
   description = $("#near").val().trim();
@@ -44,17 +46,15 @@ $("#run-search").on("click", function(click){
  $.ajax({
       url: queryURL, 
       method: "GET"
-    }).done(function(response) { 
+    }).done(function(response) {   
 
 console.log(response);
 
 for (var i = 0; i < 6; i++) {
 
-    for (var j = 1; j < 6; j++){
-
         var name = response.response.venues[i].name;
 
-        var pOne = $("<p>").text(j +"."+" Name: " + name);
+        var pOne = $("<p>").text(" Name " + name).css("font-weight","bold");
 
         $("#well-section").append(pOne);
 
@@ -68,16 +68,12 @@ for (var i = 0; i < 6; i++) {
 
         var pthree =  $("<p>").text(" URL: " + url);
 
-        $("#well-section").append(pthree);
+        $("#well-section").append(pthree)
 
 
            if (url === undefined) {
             pthree.text("URL: No Website Found")
     }
-
-    }
-
-
 
 }
 
